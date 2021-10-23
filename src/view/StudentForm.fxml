@@ -8,6 +8,74 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.text.Font?>
-<AnchorPane prefHeight="616.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentFormController">
-
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane prefHeight="580.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentFormController">
+    <children>
+        <ImageView fx:id="imgLogo" fitHeight="48.0" fitWidth="48.0" layoutX="162.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/StudentRegistration.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="lblTitle" layoutX="229.0" layoutY="30.0" text="Add New Student">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <VBox layoutX="101.0" layoutY="145.0" prefHeight="51.0" prefWidth="580.0" spacing="20.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="90.0">
+            <children>
+                <AnchorPane>
+                    <children>
+                        <TextField fx:id="txtNIC" accessibleText="NIC" prefHeight="26.0" prefWidth="286.0" promptText="Eg. 83451234V" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="10.0" layoutY="10.0">
+                    <children>
+                        <TextField fx:id="txtFullName" accessibleText="Full Name" prefHeight="26.0" prefWidth="286.0" promptText="Eg. Nipun Samarawickrama" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="10.0" layoutY="61.0">
+                    <children>
+                        <TextField fx:id="txtAddress" accessibleText="Address" prefHeight="26.0" prefWidth="286.0" promptText="Eg. No:45/3, Galle Road, Panadura" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+                    </children>
+                </AnchorPane>
+                <HBox>
+                    <children>
+                        <AnchorPane prefHeight="51.0" prefWidth="139.0">
+                            <children>
+                                <TextField fx:id="txtDOB" accessibleText="Date of Birth" alignment="CENTER"  onKeyTyped="#txtDOB_OnKeyTyped" prefHeight="26.0" prefWidth="286.0" promptText="Eg. 1983-01-05" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+                            </children>
+                        </AnchorPane>
+                        <Label fx:id="lblAge" alignment="CENTER" prefHeight="51.0" prefWidth="430.0" style="-fx-background-color: #6200EE55; -fx-background-radius: 10px;" text="Enter DOB to display the age">
+                            <padding>
+                                <Insets left="10.0" right="10.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <AnchorPane layoutX="10.0" layoutY="112.0">
+                    <children>
+                        <TextField fx:id="txtContactNumber" onKeyTyped="#txtContactNumber_OnKeyTyped" accessibleText="Contact Number" prefHeight="26.0" prefWidth="286.0" promptText="Eg. 077-4567891" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="10.0" layoutY="163.0">
+                    <children>
+                        <TextField fx:id="txtEmail" accessibleText="Email" prefHeight="26.0" prefWidth="286.0" promptText="Eg. nipun@ijse.lk" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+                    </children>
+                </AnchorPane>
+                <BorderPane>
+                    <center>
+                        <JFXButton fx:id="btnSave" onAction="#btnSave_OnAction" alignment="CENTER" minHeight="36.0" prefHeight="36.0" prefWidth="172.0" style="-fx-text-fill: #3700B3;" text="ADD NEW STUDENT" />
+                    </center>
+                </BorderPane>
+            </children>
+        </VBox>
+    </children>
 </AnchorPane>
