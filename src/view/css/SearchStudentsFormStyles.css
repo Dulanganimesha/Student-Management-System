@@ -1,0 +1,55 @@
+.text-field{
+    -fx-prompt-text-fill: rgba(0,0,0,0.5);
+}
+
+.button{
+    -fx-border-color: rgba(0,0,0,0.16);
+}
+
+#tbl-results .column-header{
+    -fx-background-color: #BB86FC;
+    -fx-size: 40px;
+    -fx-font-family: "Ubuntu";
+    -fx-font-size: 14px;
+}
+
+#tbl-results .table-row-cell:filled:hover{
+    -fx-background-color: rgba(226, 206, 255, 0.71);
+    -fx-background-insets: 1px 1px 0px 1px;
+    -fx-background-radius: 4px;
+}
+
+#tbl-results .table-row-cell:filled:selected{
+    -fx-background-color: rgba(201, 201, 201, 0.71);
+    -fx-background-insets: 1px 1px 0px 1px;
+    -fx-background-radius: 4px;
+}
+
+#tbl-results .table-row-cell:filled:selected *{
+    -fx-text-fill: black;
+}
+
+#tbl-results .table-row-cell:empty{
+    -fx-background-color: white;
+}
+
+#tbl-results{
+    -fx-border-color: rgba(0,0,0,0.2);
+    -fx-background-insets: 0px, 0px;
+    -fx-padding: 0;
+}
+
+#tbl-results .cell{
+    -fx-cell-size: 30px;
+    -fx-wrap-text: true;
+}
+
+#tbl-results .table-cell:empty{
+    -fx-border-color: transparent;
+}
+
+.action-icons{
+    -fx-cursor: hand;
+}
+
+

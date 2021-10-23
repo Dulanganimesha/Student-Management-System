@@ -12,5 +12,32 @@
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="controller.SearchStudentsFormController"
-            prefHeight="616.0" prefWidth="600.0">
+            prefHeight="580.0" prefWidth="600.0"
+            style="-fx-background-color: white;"
+            stylesheets="@css/SearchStudentsFormStyles.css">
+    <children>
+        <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="168.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/SearchClient.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="232.0" layoutY="32.0" text="Search Students">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="23.0" layoutY="102.0">
+            <children>
+                <TextField fx:id="txtQuery" accessibleText="Query" prefHeight="26.0" prefWidth="545.0" promptText="Enter student name, nic, contact number, email, etc." style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+            </children>
+        </AnchorPane>
+        <TableView id="tbl-results" fx:id="tblResults" layoutX="23.0" layoutY="181.0" onKeyPressed="#tblResults_OnKeyPressed" prefHeight="380.0" prefWidth="555.0" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="22.0">
+            <columns>
+                <TableColumn prefWidth="99.0" text="NIC" />
+                <TableColumn minWidth="7.0" prefWidth="155.0" text="Name" />
+                <TableColumn prefWidth="205.0" text="Address" />
+                <TableColumn prefWidth="94.0" />
+            </columns>
+        </TableView>
+    </children>
 </AnchorPane>
