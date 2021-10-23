@@ -8,5 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jfoenix-8.0.10" level="project" />
+    <orderEntry type="library" name="jedis-3.6.1" level="project" />
+    <orderEntry type="library" name="commons-codec-1.15" level="project" />
   </component>
 </module>
