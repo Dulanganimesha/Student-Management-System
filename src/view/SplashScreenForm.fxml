@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="529.0" prefWidth="530.0"
+            style="-fx-background-color: rgba(0,0,0,0);" stylesheets="@css/SplashScreenStyles.css"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.SplashScreenFormController">
+   <children>
+      <ImageView fitHeight="529.0" fitWidth="564.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true"
+                 AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                 AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@assets/splash-bg.png"/>
+         </image>
+      </ImageView>
+      <Label layoutX="250.0" layoutY="302.0" text="Loading..."/>
+      <Label layoutX="239.0" layoutY="240.0" text="SMS">
+         <font>
+            <Font size="40.0"/>
+         </font>
+      </Label>
+      <JFXProgressBar fx:id="pgb" layoutX="239.0" layoutY="290.0" prefHeight="4.0" prefWidth="86.0" progress="0.0"
+                      style="-fx-background-color: blue;"/>
+   </children>
+</AnchorPane>
